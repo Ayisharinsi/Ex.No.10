@@ -8,7 +8,7 @@
 
 ### **Aim:**
 
-To demonstrate how various prompting techniques (query decomposition, decision-making, semantic filtering, etc.) can be employed to create content such as reports, articles, case studies, or creative works like comic books, using ChatGPT or similar models. The objective is to highlight how different prompt structures affect the content's quality, coherence, and structure.
+To demonstrate how various prompting techniques (query decomposition, decision-making, semantic filtering, etc.) can be employed to create content such as reports, articles, case studies, or creative works like comic books, using ChatGPT or similar models. The objective is to highlight how different prompt structures affect the content's quality, coherence, and structure, with practical examples based on the final-year project **“Graph Neural Network-Based Money Laundering Detection.”**
 
 ---
 
@@ -16,45 +16,52 @@ To demonstrate how various prompting techniques (query decomposition, decision-m
 
 #### **1. Introduction to Prompt Patterns (Extended Explanation):**
 
+To effectively generate content, various prompt patterns are used to guide the AI through the content creation process. Each pattern serves a specific purpose, whether it's to break down complex queries, make decisions, refine the structure, or ensure accuracy. The following prompt patterns are demonstrated using the project **Graph Neural Network-Based Money Laundering Detection**:
 <img width="1400" height="720" alt="1" src="https://github.com/user-attachments/assets/d9ae4a2d-a344-4113-89f9-e98572192b4e" />
-
-To effectively generate content, various prompt patterns are used to guide the AI through the content creation process. Each pattern serves a specific purpose, whether it's to break down complex queries, make decisions, refine the structure, or ensure accuracy. Let’s explore each of these:
-
 1. **Query Decomposition:**
 
    * **Extended Explanation:** Query decomposition involves dividing a complex topic into smaller and manageable questions. Each sub-question focuses on one specific part of the main topic.
 
    * **Example:**
 
-     * A report on **Artificial Intelligence in Education** could be divided into:
+     * A report on **Graph Neural Network-Based Money Laundering Detection** could be divided into:
 
-       * How is AI used in education?
-       * What are the benefits of AI-based learning?
-       * What challenges are faced while implementing AI?
-       * How can AI improve student performance?
+       * What is money laundering?
+       * What are the existing methods used for money laundering detection?
+       * What are the limitations of traditional transaction analysis?
+       * How can financial transactions be represented as a graph?
+       * How can Graph Neural Networks be used for money laundering detection?
+       * What suspicious transaction patterns can be identified?
+       * How can GCN, GAT, GATv2, and GraphSAGE be used in the proposed system?
 
    * **Why is it useful?**
 
      * Query decomposition makes complex topics easier to handle. It helps the AI provide organized, detailed, and relevant information without missing important points.
 
 2. **Decision Making:**
-
 <img width="516" height="599" alt="2" src="https://github.com/user-attachments/assets/be39d3e3-52a2-47b6-ace0-f13caf208981" />
+   * **Extended Explanation:** Decision-making prompts ask the AI to select the most suitable option from multiple alternatives based on given requirements.
 
-* **Extended Explanation:** Decision-making prompts ask the AI to select the most suitable option from multiple alternatives based on given requirements.
-* **Example:**
+   * **Example:**
 
-  * For a case study: “Should the case study focus on the company's AI technology or its customer satisfaction strategy?”
-* **Why is it useful?**
+     * For the proposed money laundering detection system:
 
-  * Decision-making keeps the content focused and helps select the direction that best matches the purpose of the document.
+       * “Compare GCN, GAT, GATv2, and GraphSAGE for detecting suspicious financial transaction patterns. Which model or combination of models is most suitable for the proposed system?”
+
+   * **Why is it useful?**
+
+     * Decision-making keeps the content focused and helps select the direction, algorithm, or approach that best matches the purpose of the project.
 
 4. **Answer Engineering:**
 
    * **Extended Explanation:** Answer engineering involves giving clear instructions about how the AI should organize and present the final answer.
+
    * **Example:**
 
-     * For an article: "Write an article on Artificial Intelligence in Education using the structure: Introduction, Applications, Benefits, Challenges, Future Scope, and Conclusion. Use simple and formal language."
+     * For a technical project report:
+
+       * “Write a report on Graph Neural Network-Based Money Laundering Detection using the structure: Introduction, Problem Statement, Existing System, Proposed System, Methodology, GNN Models, Evaluation Metrics, Applications, Limitations, Future Scope, and Conclusion. Use simple and formal technical language.”
+
    * **Why is it useful?**
 
      * It produces structured and easy-to-read content while reducing unnecessary or unrelated information.
@@ -65,23 +72,30 @@ To effectively generate content, various prompt patterns are used to guide the A
 
    * **Example:**
 
-     * When generating a report about AI in healthcare, check:
+     * When generating a report about **Graph Neural Network-Based Money Laundering Detection**, check:
 
-       * Are the statistics from reliable sources?
-       * Are the technologies currently available?
-       * Are the claims supported by trustworthy references?
-       * Are outdated facts avoided?
+       * Are the definitions of money laundering and AML accurate?
+       * Are the descriptions of GCN, GAT, GATv2, and GraphSAGE correct?
+       * Are the transaction graph concepts correctly explained?
+       * Are the dataset details accurate?
+       * Are the claims about suspicious transaction patterns supported by reliable sources?
+       * Are performance values based on actual experimental results?
+       * Are outdated or unsupported claims avoided?
 
    * **Why is it useful?**
 
-     * Fact checking improves the reliability and credibility of the generated content.
+     * Fact checking improves the reliability and credibility of the generated content and prevents incorrect technical information from being included in the project report.
 
 6. **Tail Generation:**
 
    * **Extended Explanation:** Tail generation is used to continue and expand an existing response by adding more information, examples, explanations, or conclusions.
+
    * **Example:**
 
-     * For a case study: “Explain how AI-based learning systems can help students identify their weak areas and provide personalized learning recommendations.”
+     * For the proposed system:
+
+       * “Continue the methodology section by explaining how financial transactions can be represented as a graph using nodes and edges, how GNNs learn from neighboring nodes, and how suspicious transaction patterns can be detected.”
+
    * **Why is it useful?**
 
      * It adds depth to the content and prevents the generated response from being too short or superficial.
@@ -89,9 +103,18 @@ To effectively generate content, various prompt patterns are used to guide the A
 7. **Menu Actions:**
 
    * **Extended Explanation:** Menu actions provide multiple choices to guide the AI toward a suitable content direction.
+
    * **Example:**
 
-     * For an article: “Should the article focus more on the benefits of AI in education, the challenges of AI adoption, or future developments?”
+     * For an article about the project:
+
+       * “Which topic should the article focus on?”
+
+         * A. Traditional money laundering detection
+         * B. Graph-based transaction analysis
+         * C. Graph Neural Networks for AML
+         * D. Future applications of AI in financial fraud detection
+
    * **Why is it useful?**
 
      * It provides flexibility and helps select the most appropriate topic or perspective.
@@ -99,9 +122,13 @@ To effectively generate content, various prompt patterns are used to guide the A
 8. **Semantic Filter:**
 
    * **Extended Explanation:** A semantic filter controls the meaning, tone, audience, and writing style of the generated content.
+
    * **Example:**
 
-     * For a student report: “Write the content using simple technical language suitable for engineering students.”
+     * For a student project report:
+
+       * “Explain Graph Neural Network-Based Money Laundering Detection using simple technical language suitable for final-year CSE students. Focus on transaction graphs, GNN models, suspicious patterns, and the proposed detection process.”
+
    * **Why is it useful?**
 
      * It ensures that the generated content matches the intended audience and purpose.
@@ -115,38 +142,50 @@ The first step in content creation is selecting an appropriate content type. Dif
 1. **Reports:**
 
    * Reports present information in a formal and organized manner.
-   * **Example:** A report on the use of AI in smart transportation systems.
+
+   * **Example:** A technical report on **Graph Neural Network-Based Money Laundering Detection**.
+
    * **Prompt Refinement:**
 
-     * Initial prompt: "Write a report on smart transportation."
-     * Refined prompt: "Write a detailed report on how AI and IoT are transforming smart transportation systems. Include applications, benefits, challenges, and future developments."
+     * Initial prompt: "Write a report on money laundering detection."
+
+     * Refined prompt: "Write a detailed technical report on Graph Neural Network-Based Money Laundering Detection. Include the problem statement, existing methods, transaction graph representation, GNN models, suspicious transaction patterns, evaluation metrics, benefits, challenges, and future developments."
 
 2. **Case Studies:**
 
    * Case studies analyze a particular organization, system, project, or situation in detail.
-   * **Example:** A case study on the implementation of an AI-powered customer service chatbot.
+
+   * **Example:** A case study on the use of a Graph Neural Network to identify suspicious financial transaction networks.
+
    * **Prompt Refinement:**
 
-     * Initial prompt: "Write a case study on an AI chatbot."
-     * Refined prompt: "Write a detailed case study on an AI-powered customer service chatbot. Explain the problem, proposed solution, implementation process, benefits, challenges, and lessons learned."
+     * Initial prompt: "Write a case study on money laundering detection."
+
+     * Refined prompt: "Write a detailed case study on a Graph Neural Network-based money laundering detection system. Explain the financial fraud problem, transaction graph construction, proposed GNN solution, suspicious transaction detection, implementation process, benefits, challenges, and lessons learned."
 
 3. **Articles:**
 
    * Articles provide information, opinions, or explanations about a particular topic.
-   * **Example:** An article explaining how Artificial Intelligence is changing modern education.
+
+   * **Example:** An article explaining how Graph Neural Networks can improve money laundering detection.
+
    * **Prompt Refinement:**
 
-     * Initial prompt: "Write an article about AI in education."
-     * Refined prompt: "Write an informative article about how AI is transforming education. Discuss personalized learning, automated assessment, virtual assistants, benefits, limitations, and future possibilities."
+     * Initial prompt: "Write an article about AI-based money laundering detection."
+
+     * Refined prompt: "Write an informative article about how Graph Neural Networks are used for money laundering detection. Discuss transaction graphs, relationships between accounts, suspicious transaction patterns, GCN, GAT, GraphSAGE, benefits, limitations, and future possibilities."
 
 4. **Creative Content:**
 
    * Creative content includes stories, comic books, scripts, fictional narratives, and other imaginative works.
-   * **Example:** A futuristic comic about students using an AI robot to solve environmental problems.
+
+   * **Example:** A futuristic comic about financial investigators using a Graph Neural Network to detect a suspicious network of transactions.
+
    * **Prompt Refinement:**
 
-     * Initial prompt: "Write a futuristic comic story."
-     * Refined prompt: "Create a short futuristic comic story about engineering students who discover an intelligent robot capable of detecting environmental pollution and helping them protect their city."
+     * Initial prompt: "Write a futuristic comic story about fraud detection."
+
+     * Refined prompt: "Create a short futuristic comic story about financial investigators who use an intelligent Graph Neural Network system to identify suspicious connections between bank accounts and detect a possible money laundering network."
 
 ---
 
@@ -157,23 +196,32 @@ Creating an effective prompt requires gradually adding important details and con
 1. **Start with Simple Prompts:**
 
    * Begin with a simple description of the required content.
-   * **Example (For an AI Education Report):**
 
-     * Simple prompt: "Write a report about Artificial Intelligence in education."
+   * **Example (For a Money Laundering Detection Report):**
+
+     * Simple prompt: "Write a report about money laundering detection."
 
 2. **Add Specifics:**
 
-   * Add specific requirements such as target audience, structure, examples, benefits, and challenges.
+   * Add specific requirements such as target audience, structure, examples, benefits, challenges, and technical methods.
+
    * **Example:**
 
-     * Refined prompt: "Write a report about Artificial Intelligence in education for engineering students. Include applications, benefits, challenges, examples, and future scope."
+     * Refined prompt: "Write a report about Graph Neural Network-Based Money Laundering Detection for final-year CSE students. Include the problem statement, transaction graph representation, GNN models, suspicious transaction patterns, benefits, challenges, evaluation metrics, and future scope."
 
 3. **Apply Advanced Techniques:**
 
    * Advanced techniques such as decision-making, tail generation, fact checking, and semantic filtering can be applied to improve the output.
-   * **Example (For Creative Content):**
 
-     * Tail generation: "Continue the story by explaining how the students use the AI robot to identify pollution sources and develop a solution for the city."
+   * **Example (For Technical Content):**
+
+     * Decision making: "Compare GCN, GAT, GATv2, and GraphSAGE and identify suitable models for the proposed money laundering detection system."
+
+     * Tail generation: "Continue the methodology by explaining how transaction graphs are constructed and how GNNs analyze relationships between connected accounts."
+
+     * Fact checking: "Verify the technical descriptions of the GNN models and identify claims that require reliable references."
+
+     * Semantic filtering: "Rewrite the explanation using simple technical language suitable for final-year engineering students."
 
 ---
 
@@ -186,11 +234,23 @@ Content generation is an iterative process in which the first output is improved
    * Generate the first version using a simple prompt.
    * Review the content for clarity, organization, relevance, and completeness.
 
+   * **Example:**
+
+     * Initial prompt: "Explain Graph Neural Network-Based Money Laundering Detection."
+
+     * The AI generates a basic explanation covering money laundering, transaction graphs, GNNs, and suspicious transactions.
+
 2. **Refining the Output:**
 
-   * For **reports**, additional technical details, examples, tables, or statistics can be added.
+   * For **reports**, additional technical details, examples, tables, diagrams, or verified references can be added.
+
    * For **creative writing**, character development, dialogue, setting, and storyline can be improved.
+
    * For **case studies**, implementation details, challenges, results, and lessons learned can be added.
+
+   * **Example refinement prompt:**
+
+     * “Expand the previous explanation by describing how financial transactions are converted into a graph, how nodes and edges are represented, how GNN models learn relationships, and how suspicious patterns such as cyclic and multi-hop transactions can be analyzed.”
 
 ---
 
@@ -198,27 +258,30 @@ Content generation is an iterative process in which the first output is improved
 
 Evaluation helps determine whether the generated content satisfies the required objectives.
 
-* **Coherence:** Check whether the content follows a logical sequence and whether the ideas connect properly.
+* **Coherence:** Check whether the content follows a logical sequence from the money laundering problem to transaction graph construction, GNN processing, detection, and evaluation.
 
-* **Creativity/Originality:** Check whether the content provides fresh ideas instead of repetitive or generic information.
+* **Creativity/Originality:** Check whether the content provides fresh and meaningful examples instead of repetitive or generic information.
 
-* **Accuracy:** Verify whether technical information, statistics, examples, and claims are correct and supported by reliable sources.
+* **Accuracy:** Verify whether technical information, statistics, examples, GNN concepts, and claims are correct and supported by reliable sources.
 
-* **Relevance:** Ensure that the content directly addresses the requested topic without unnecessary information.
+* **Relevance:** Ensure that the content directly addresses **Graph Neural Network-Based Money Laundering Detection** without unnecessary information.
 
 * **Readability:** Check grammar, sentence structure, vocabulary, and overall ease of understanding.
 
-* **Structure:** Confirm that headings, subheadings, paragraphs, lists, and tables are organized properly.
+* **Structure:** Confirm that headings, subheadings, paragraphs, lists, tables, and technical explanations are organized properly.
 
 ---
 
 ## Deliverables:
 
-1. First Draft: A basic draft of the report, case study, article, or story generated using simple prompts.
-2. Refined Content: A more detailed and structured output, achieved by applying more advanced prompt techniques.
-3. Multiple Versions: Different versions of the content, showing the effect of prompt changes on the output.
-4. Final Version: The polished version of the content after incorporating feedback and refining the prompts.
+1. First Draft: A basic draft of the report, case study, article, or story generated using simple prompts based on **Graph Neural Network-Based Money Laundering Detection**.
+
+2. Refined Content: A more detailed and structured output, achieved by applying more advanced prompt techniques such as query decomposition, decision-making, answer engineering, fact checking, tail generation, menu actions, and semantic filtering.
+
+3. Multiple Versions: Different versions of the content, showing the effect of prompt changes on the output and demonstrating how prompt refinement improves the generated content.
+
+4. Final Version: The polished version of the content after incorporating feedback, checking technical accuracy, and refining the prompts.
 
 ## Conclusion:
 
-By applying different prompting techniques such as query decomposition, decision-making, answer engineering, fact checking, tail generation, menu actions, and semantic filtering, AI models can generate structured and high-quality content. This experiment demonstrates that carefully designed prompts improve the clarity, accuracy, creativity, and organization of reports, articles, case studies, and creative works. Prompt refinement also helps produce content that is better suited to the intended audience and purpose.
+By applying different prompting techniques such as query decomposition, decision-making, answer engineering, fact checking, tail generation, menu actions, and semantic filtering, AI models can generate structured and high-quality content related to **Graph Neural Network-Based Money Laundering Detection**. This experiment demonstrates that carefully designed prompts improve the clarity, accuracy, creativity, relevance, and organization of reports, articles, case studies, and creative works. Prompt refinement also helps produce content that is better suited to the intended audience and purpose.
